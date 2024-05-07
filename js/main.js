@@ -6,19 +6,27 @@ const precioRioDeJaneiro=100000;
 const precioCancun=500000;
 const precioSalta=30000;
 
-//Definiendo un array de objetos con el nombre y el puntaje mas alto del jugador
-const listaJugadores = [
-    { nombre: 'LAR', puntajeMasAlto: 1 },
-    { nombre: 'LuAL', puntajeMasAlto: 4 },
-    { nombre: 'Kevin93', puntajeMasAlto: 5 },
+//Clase para creer un nuevo pasajero
+class Pasajero {
+    constructor(nombre) {
+      this.nombre = nombre;
+      this.nroAsiento = 15;
+    }
+  }
+
+//Definiendo un array de objetos con el nombre y el numero de asiento
+const listaPasajeros = [
+    { nombre: 'Dani', nroAsiento: 1 },
+    { nombre: 'Diego', nroAsiento: 4 },
+    { nombre: 'Lautaro', nroAsiento: 5 },
   ];
 
 
 //funcion para encontrar un asiento ocupado en el array
 function consultarAsiento(numAsiento) {
-    return listaJugadores.find((jugador) => {
-      console.log(`Compare: ${jugador.nombre}, ${nombreJugador}`);
-      return jugador.nombre === nombreJugador;
+    return listaPasajeros.find((pasajero) => {
+      console.log(`Compare: ${pasajero.nombre}, ${nombrePasajero}`);
+      return pasajero.nombre === nombrePasajero;
     });
   }
 
