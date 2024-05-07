@@ -1,3 +1,6 @@
+//Definiendo variables globales
+let numeroAsiento;
+
 let opcion;
 let cantidadPersonas;
 let precioTotal;
@@ -16,9 +19,9 @@ class Pasajero {
 
 //Definiendo un array de objetos con el nombre y el numero de asiento
 const listaPasajeros = [
-    { nombre: 'Dani', nroAsiento: 1 },
-    { nombre: 'Diego', nroAsiento: 4 },
-    { nombre: 'Lautaro', nroAsiento: 5 },
+    { nombre: 'Dani', nroAsiento: 8 },
+    { nombre: 'Diego', nroAsiento: 9 },
+    { nombre: 'Lautaro', nroAsiento: 6 },
   ];
 
 
